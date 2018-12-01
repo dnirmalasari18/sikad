@@ -3,8 +3,12 @@
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="assets/js/material.min.js"></script>
 
+<<<<<<< HEAD
 
 <!--untuk sidebar --> 
+=======
+<!--untuk sidebar -->
+>>>>>>> 88144d0c2cf1a99dfbf3eceeadbb4cf3c33613f6
     <script src="assets/js/vendor/jquery/jquery.min.js"></script>
     <script src="assets/js/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/vendor/metisMenu/metisMenu.min.js"></script>
