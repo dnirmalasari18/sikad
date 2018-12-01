@@ -16,19 +16,13 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     @include('layouts.menu')
-                    @guest
-                    <li class="button-container">
-                        <a href="http://www.creative-tim.com/buy/material-kit-pro?ref=presentation" class="btn btn-white btn-round">
-                            Masuk
-                        </a>
-                    </li>
-                    @else
+                    @if(isset($user))
                     <li class="button-container">
                         <a href="http://www.creative-tim.com/buy/material-kit-pro?ref=presentation" class="btn btn-white btn-round">
                                 Masuk
                         </a>
                     </li>
-                    @endguest
+                    @endif
                 </ul>
             </div>
         </div>
