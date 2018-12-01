@@ -19,6 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('DataDiri', function(){
+    return view('Maba.formDataDiri');
+});
+
 Route::prefix('users')->name('user.')->group(function(){
     Route::get('','UserController@list')->name('list');
     Route::get('{id}','UserController@lihat')->name('lihat');

@@ -3,6 +3,12 @@
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="assets/js/material.min.js"></script>
 
+<!--untuk sidebar -->
+    <script src="assets/js/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/js/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="assets/js/dist/js/sb-admin-2.js"></script>
+
 <!--    Plugin for Date Time Picker and Full Calendar Plugin   -->
 <script src="assets/js/moment.min.js"></script>
 
@@ -23,9 +29,6 @@
 
 <!--    Plugin For Google Maps   -->
 <script  type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-
-
-
 
 <!--    Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc    -->
 <script src="assets/js/material-kit.js?v=1.2.1" type="text/javascript"></script>
