@@ -1,13 +1,13 @@
 <li>
-        <a href="index.html">
-            <i class="material-icons">apps</i> Components
-        </a>
-    </li>
-    <li>
-            <a href="index.html">
-                <i class="material-icons">apps</i> Components
-            </a>
-        </li>
+    <a href="index.html">
+        <i class="material-icons">apps</i> Components
+    </a>
+</li>
+<li>
+    <a href="index.html">
+        <i class="material-icons">apps</i> Components
+    </a>
+</li>
     <li class="dropdown" id="headerNavigationItems">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <i class="material-icons">view_day</i> Sections

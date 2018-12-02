@@ -4,11 +4,8 @@
 <script src="assets/js/material.min.js"></script>
 
 
-<!--untuk sidebar --> 
-    <script src="assets/js/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/js/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/vendor/metisMenu/metisMenu.min.js"></script>
-    <script src="assets/js/dist/js/sb-admin-2.js"></script>
+
+
 
 <!--    Plugin for Date Time Picker and Full Calendar Plugin   -->
 <script src="assets/js/moment.min.js"></script>

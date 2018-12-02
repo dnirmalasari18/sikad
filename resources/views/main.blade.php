@@ -5,5 +5,5 @@
 @endsection
 
 @section('body')
-hehehe
+gbagian ini masi keuttutuopppp
 @endsection

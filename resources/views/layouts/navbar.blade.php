@@ -1,19 +1,18 @@
 <nav class="navbar navbar-primary navbar-fixed-top" id="sectionsNav">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                
-                <button type="button" class="navbar-toggle" data-toggle="collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="presentation.html"><img src="{!! asset('assets/img/logo-hmtc.jpg') !!}" height="32" ></a>
-                <a class="navbar-brand" href="presentation.html" >SIKAD</a>
-            </div>
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">                
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="presentation.html"><img src="{!! asset('assets/img/logo-hmtc.jpg') !!}" height="32" ></a>
+            <a class="navbar-brand" href="presentation.html" >SIKAD</a>
+        </div>
             
-            <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     @include('layouts.menu')
                     @if(isset($user))
@@ -25,5 +24,5 @@
                     @endif
                 </ul>
             </div>
-        </div>
-    </nav>
+    </div>
+</nav>

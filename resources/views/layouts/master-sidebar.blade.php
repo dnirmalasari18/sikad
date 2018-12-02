@@ -10,9 +10,15 @@
         @include('partials.css')
         @yield('unique-css')
     </head>
-    <body class="section-white" >
-        @include('layouts.navbar')
-        @yield('body')
+    <body class="section-white">
+        
+            <div id="wrapper">
+                @include('layouts.navbar')
+                @include('layouts.sidebar-datadiri')
+                <div class="container">
+                @yield('body')
+            </div>
+        </div>
         @include('partials.js')
         @yield('unique-js')
     </body>

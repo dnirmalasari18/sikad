@@ -3340,6 +3340,7 @@ fieldset[disabled] .navbar .btn-link:focus {
       margin-top: 10px;
     }
 */
+margin-left: auto;
     }
     .navbar .navbar-brand {
         height: 50px;
@@ -4075,7 +4076,7 @@ h2.title {
 
 .card .header-primary,
 .card .content-primary {
-    background: linear-gradient(60deg, #ab47bc, #7b1fa2);
+    background: linear-gradient(60deg, #327cc1,#041622);
 }
 
 .card .header-info,
@@ -4941,7 +4942,7 @@ h2.title {
 .panel .panel-heading {
     background-color: transparent;
     border-bottom: 1px solid #ddd;
-    padding: 25px 10px 5px 0px;
+    padding: 10px 10px 5px 0px;
 }
 
 .panel .panel-heading .panel-title {
@@ -9595,6 +9596,7 @@ select.selectpicker {
         width: 920px;
     }
 }
+
 .sidebar .sidebar-nav.navbar-collapse {
     padding-left: 0;
     padding-right: 0;
@@ -9605,9 +9607,15 @@ select.selectpicker {
   .sidebar ul li {
     border-bottom: 1px solid #e7e7e7;
   }
-  .sidebar ul li a.active {
-    background-color: #eeeeee;
+  .sidebar ul li a {
+    background-color: #1d2731;
+    color: #f8eee7;
   }
+  .sidebar ul li a:hover {
+    background-color: #739cb4;
+    color: black;
+  }
+ 
   .sidebar .arrow {
     float: right;
   }
@@ -9627,3 +9635,39 @@ select.selectpicker {
   .sidebar .nav-third-level li a {
     padding-left: 52px;
   }
+
+  #page-wrapper {
+    padding: 10px 15px;
+    min-height: 568px;
+    background-color: white;
+  }
+  @media (min-width: 768px) {
+    #page-wrapper {
+      position: inherit;
+      margin: 100px 0 0 250px;
+      padding-left:100px;
+      padding: 0 30px;
+      border-left: 1px solid #e7e7e7;
+    }
+  }
+
+@media (min-width: 768px) {
+    .sidebar {
+        z-index: 1;
+        position: absolute;
+        width:180px;
+        border: 1px solid #aaa;
+        background: #1d2731;
+        float: left;
+        height: 100%;
+    }
+
+}
+
+.page-header1 {
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
