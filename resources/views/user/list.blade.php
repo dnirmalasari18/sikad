@@ -18,14 +18,21 @@
             </div>
             <div class="card-content" >
                 <div class="tab-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button class="btn btn-primary btn-round"style="background-color:#328cc1; color:black;display:inline-block;float:right;">
+                                <i class="material-icons">add</i> <b>Tambah akun</b>
+                            </button>
+                        </div>
+                    </div>
                     <table class="table table-hover" id="dataTables-example">
                         <thead>
                             <tr>
-                                <th class="text-center">#</th>
-                                <th>Nama</th>
-                                <th>NRP</th>
-                                <th>Peran</th>
-                                <th class="text-center">Actions</th>
+                                <th class="text-center"><b>#</b></th>
+                                <th><b>Nama</b></th>
+                                <th><b>NRP</b></th>
+                                <th><b>Peran</b></th>
+                                <th class="text-center"><b>Actions</b></th>
                             </tr>
                         </thead>
                         <tbody>
