@@ -33,7 +33,7 @@
         <hr />
 
         <div class="copyright pull-right">
-            dfoadklfmdafkj
+
         </div>
     </div>
 </footer>
