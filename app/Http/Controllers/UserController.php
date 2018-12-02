@@ -8,15 +8,15 @@ class UserController extends Controller
 {
     //
     public function list(){
-
+        return view('user.list');
     }
 
     public function lihat(){
-
+        return view('user.lihat');
     }
 
     public function tambah(){
-
+        return view('user.tambah');
     }
 
     public function doTambah(){
@@ -24,7 +24,7 @@ class UserController extends Controller
     }
 
     public function ubah(){
-
+        return view('user.ubah');
     }
 
     public function doUbah(){

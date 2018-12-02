@@ -8,15 +8,15 @@ class PerilakuController extends Controller
 {
     //
     public function list(){
-
+        return view('perilaku.list');
     }
 
     public function lihat(){
-
+        return view('perilaku.lihat');
     }
 
     public function tambah(){
-
+        return view('perilaku.tambah');
     }
 
     public function doTambah(){
@@ -24,7 +24,7 @@ class PerilakuController extends Controller
     }
 
     public function ubah(){
-
+        return view('perilaku.ubah');
     }
 
     public function doUbah(){

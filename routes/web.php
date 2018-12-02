@@ -25,12 +25,12 @@ Route::get('DataDiri', function(){
 
 Route::prefix('users')->name('user.')->group(function(){
     Route::get('','UserController@list')->name('list');
-    Route::get('{id}','UserController@lihat')->name('lihat');
     Route::get('tambah','UserController@tambah')->name('tambah');
     Route::post('tambah','UserController@doTambah');
     Route::get('ubah/{id}','UserController@ubah')->name('ubah');
     Route::post('ubah/{id}','UserController@doUbah');
     Route::post('hapus/{id}','UserController@doHapus')->name('hapus');
+    Route::get('{id}','UserController@lihat')->name('lihat');
 });
 
 Route::prefix('maba')->name('maba.')->group(function(){
@@ -63,12 +63,12 @@ Route::prefix('maba')->name('maba.')->group(function(){
 
 Route::prefix('wawasan')->name('wawasan.')->group(function(){
     Route::get('','WawasanController@list')->name('list');
-    Route::get('{id}','WawasanController@lihat')->name('lihat');
     Route::get('tambah','WawasanController@tambah')->name('tambah');
     Route::post('tambah','WawasanController@doTambah');
     Route::get('ubah/{id}','WawasanController@ubah')->name('ubah');
     Route::post('ubah/{id}','WawasanController@doUbah');
     Route::post('hapus/{id}','WawasanController@doHapus')->name('hapus');
+    Route::get('{id}','WawasanController@lihat')->name('lihat');
 
     Route::prefix('{id}/poin')->name('poin.')->group(function(){
         Route::get('tambah','WawasanController@poinTambah')->name('tambah');
@@ -76,39 +76,37 @@ Route::prefix('wawasan')->name('wawasan.')->group(function(){
         Route::get('ubah/{poinid}','WawasanController@poinUbah')->name('ubah');
         Route::post('ubah/{poinid}','WawasanController@poinUbah');
         Route::post('hapus/{poinid}','WawasanController@poinDoHapus')->name('hapus');
-
     });
 });
 
 Route::prefix('output')->name('output.')->group(function(){
     Route::get('','OutputController@list')->name('list');
-    Route::get('{id}','OutputController@lihat')->name('lihat');
     Route::get('tambah','OutputController@tambah')->name('tambah');
     Route::post('tambah','OutputController@doTambah');
     Route::get('ubah/{id}','OutputController@ubah')->name('ubah');
     Route::post('ubah/{id}','OutputController@doUbah');
     Route::post('hapus/{id}','OutputController@doHapus')->name('hapus');
+    Route::get('{id}','OutputController@lihat')->name('lihat');
 });
 
 Route::prefix('perilaku')->name('perilaku.')->group(function(){
     Route::get('','PerilakuController@list')->name('list');
-    Route::get('{id}','PerilakuController@lihat')->name('lihat');
     Route::get('tambah','PerilakuController@tambah')->name('tambah');
     Route::post('tambah','PerilakuController@doTambah');
     Route::get('ubah/{id}','PerilakuController@ubah')->name('ubah');
     Route::post('ubah/{id}','PerilakuController@doUbah');
     Route::post('hapus/{id}','PerilakuController@doHapus')->name('hapus');
+    Route::get('{id}','PerilakuController@lihat')->name('lihat');
 });
 
 Route::prefix('kegiatan')->name('kegiatan.')->group(function(){
     Route::get('','KegiatanController@list')->name('list');
-    Route::get('{id}','KegiatanController@lihat')->name('lihat');
     Route::get('tambah','KegiatanController@tambah')->name('tambah');
     Route::post('tambah','KegiatanController@doTambah');
     Route::get('ubah/{id}','KegiatanController@ubah')->name('ubah');
     Route::post('ubah/{id}','KegiatanController@doUbah');
     Route::post('hapus/{id}','KegiatanController@doHapus')->name('hapus');
-
+    Route::get('{id}','KegiatanController@lihat')->name('lihat');
     Route::prefix('{id}/alat')->name('alat.')->group(function(){
         Route::get('','KegiatanController@alatList')->name('list');
         Route::get('tambah','KegiatanController@alatTambah')->name('tambah');
@@ -117,4 +115,9 @@ Route::prefix('kegiatan')->name('kegiatan.')->group(function(){
         Route::post('ubah/{alatid}','KegiatanController@alatUbah');
         Route::post('hapus/{alatid}','KegiatanController@alatDoHapus')->name('hapus');
     });
+});
+
+Route::get('logout',function(){
+    Auth::logout();
+    return redirect('/home');
 });

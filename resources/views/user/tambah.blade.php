@@ -2,7 +2,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Data Diri
+    Tambah User
 @endsection
 
 @section('body')
@@ -17,7 +17,7 @@
                     <div class="nav-tabs-navigation">
                         <div class="nav-tabs-wrapper">
                             <ul class="nav nav-tabs" data-tabs="tabs">
-                                <h3><b>Data Diri</b></h3>
+                                <h3><b>Tambah User</b></h3>
                             </ul>
                         </div>
                     </div>
@@ -26,12 +26,16 @@
                     <div class="tab-content">
                         <form role="form">
                             <div class="form-group label-floating">
-                                <label class="control-label">Nama Panggilan</label>
+                                <label class="control-label">Username</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="form-group label-floating">
-                                <label class="control-label"> Alamat Surabaya</label>
-                                <textarea class="form-control" rows="5"></textarea>
+                                <label class="control-label">Password</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group label-floating">
+                                <label class="control-label">Role</label>
+                                <input type="text" class="form-control">
                             </div>
                         </form>
                         <div class="row">

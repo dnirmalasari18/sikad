@@ -8,15 +8,15 @@ class OutputController extends Controller
 {
     //
     public function list(){
-
+        return view('output.list');
     }
 
     public function lihat(){
-
+        return view('output.lihat');
     }
 
     public function tambah(){
-
+        return view('output.tambah');
     }
 
     public function doTambah(){
@@ -24,7 +24,7 @@ class OutputController extends Controller
     }
 
     public function ubah(){
-
+        return view('output.ubah');
     }
 
     public function doUbah(){

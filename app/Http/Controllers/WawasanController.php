@@ -8,15 +8,15 @@ class WawasanController extends Controller
 {
     //
     public function list(){
-
+        return view('wawasan.list');
     }
 
     public function lihat(){
-
+        return view('wawasan.lihat');
     }
 
     public function tambah(){
-
+        return view('wawasan.tambah');
     }
 
     public function doTambah(){
@@ -24,7 +24,7 @@ class WawasanController extends Controller
     }
 
     public function ubah(){
-
+        return view('wawasan.ubah');
     }
 
     public function doUbah(){
@@ -37,7 +37,7 @@ class WawasanController extends Controller
 
     // poin
     public function poinTambah(){
-
+        return view('wawasan.poin.tambah');
     }
 
     public function poinDoTambah(){
@@ -45,7 +45,7 @@ class WawasanController extends Controller
     }
 
     public function poinUbah(){
-
+        return view('wawasan.poin.ubah');
     }
 
     public function poinDoUbah(){
