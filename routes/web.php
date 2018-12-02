@@ -26,11 +26,11 @@ Route::group(['middleware'=>'auth'],function(){
 
     Route::get('hasil/persebaran',function(){
         return view('hasil.persebaran');
-    });
+    })->name('hasil.persebaran');
 
     Route::get('hasil/perkembangan/{mabaid}',function($mabaid){
         return view('hasil.perkembangan');
-    });
+    })->name('hasil.perkembangan');
 
     Route::prefix('users')->name('user.')->group(function(){
         Route::get('','UserController@list')->name('list');

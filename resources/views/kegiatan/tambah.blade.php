@@ -2,7 +2,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Tambah Wawasan
+    Tambah Kegiatan
 @endsection
 
 @section('body')
@@ -17,7 +17,7 @@
                     <div class="nav-tabs-navigation">
                         <div class="nav-tabs-wrapper">
                             <ul class="nav nav-tabs" data-tabs="tabs">
-                                <h3><b>Tambah Wawasan</b></h3>
+                                <h3><b>Tambah Kegiatan</b></h3>
                             </ul>
                         </div>
                     </div>
@@ -26,16 +26,12 @@
                     <div class="tab-content">
                         <form role="form">
                             <div class="form-group label-floating">
-                                <label class="control-label">Nama Wawasan</label>
+                                <label class="control-label">Nama Kegiatan</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="form-group label-floating">
-                                <label class="control-label">Bobot Wawasan</label>
+                                <label class="control-label">Deskripsi Kegiatan</label>
                                 <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group label-floating">
-                                <label class="control-label">Deskripsi Wawasan</label>
-                                <textarea class="form-control" rows="5"></textarea>
                             </div>
                         </form>
                         <div class="row">

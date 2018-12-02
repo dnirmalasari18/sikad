@@ -36,6 +36,10 @@ class KegiatanController extends Controller
     }
 
     // alat
+    public function alatList(){
+        return view('kegiatan.alat.list');
+    }
+
     public function alatTambah(){
         return view('kegiatan.alat.tambah');
     }

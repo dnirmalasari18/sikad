@@ -30,6 +30,10 @@
                                 <input type="text" class="form-control">
                             </div>
                             <div class="form-group label-floating">
+                                <label class="control-label">Output</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group label-floating">
                                 <label class="control-label">Bobot Perilaku</label>
                                 <input type="text" class="form-control">
                             </div>
@@ -50,5 +54,4 @@
         </div>
     </div>
 </div>
-@include('layouts.footer')
 @endsection
