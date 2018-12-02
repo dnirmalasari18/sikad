@@ -10050,3 +10050,30 @@ select.selectpicker {
     }
   }
 
+  .panel-default2 {
+    border-color: #ddd;
+  }
+  .panel-default2 > .panel-heading {
+    color: black;
+    background-color:#82CAFF;
+    border-color: #646d7e;
+  }
+  .panel-default2 > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ddd;
+  }
+
+  .panel-default2 > .panel-heading .badge {
+    color: #f5f5f5;
+    background-color: #333;
+  }
+  .panel-default2 > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #ddd;
+  }
+  .panel2 {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #646d7e;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  }
