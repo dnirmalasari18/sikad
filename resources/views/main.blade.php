@@ -12,9 +12,9 @@ style="background-color:#8eaebd;"
 <div class="limiter">
 		<div class="container-login100" >
 			<div class="wrap-login100 p-t-190 p-b-30">
-				<form class="login100-form validate-form">
+            <form method="POST" action="{{ route('login') }}" class="login100-form validate-form">
                     <span class="login100-form-title p-t-20 p-b-45"style="margin-bottom:10px;color:#031424">
-                            <img src="{!! asset('assets/img/logo-hmtc.jpg') !!}"> 
+                            <img src="{!! asset('assets/img/logo-hmtc.jpg') !!}">
                     </span>
 					<span class="login100-form-title p-t-20 p-b-45"style="margin-bottom:10px;color:#031424;font-size:18px;">
                         <b>SELAMAT DATANG di<br>
@@ -49,13 +49,13 @@ style="background-color:#8eaebd;"
 						</a>
 					</div>
 
-					
+
 				</form>
 			</div>
 		</div>
 	</div>
 
-            
+
         </form>
     </div>
 </div>
