@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Main Page
+    Selamat Datang!
 @endsection
 
 @section('background-change')
