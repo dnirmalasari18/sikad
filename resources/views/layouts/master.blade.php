@@ -15,6 +15,7 @@
         <div class="container">
         @yield('body')
         </div>
+        @include('layouts.footer')
         @include('partials.js')
         @yield('unique-js')
     </body>
