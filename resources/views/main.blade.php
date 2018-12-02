@@ -16,7 +16,7 @@ style="background-color:#8eaebd;"
                     <span class="login100-form-title p-t-20 p-b-45"style="margin-bottom:10px;color:#031424">
                             <img src="{!! asset('assets/img/logo-hmtc.jpg') !!}"> 
                     </span>
-					<span class="login100-form-title p-t-20 p-b-45"style="margin-bottom:10px;color:#031424;font-size:18px;">
+					<span class="login100-form-title p-t-20 p-b-45"style="margin-bottom:10px;color:#031424;font-size:18pxl">
                         <b>SELAMAT DATANG di<br>
                         Sistem Informasi KDPM</b>
 					</span>
