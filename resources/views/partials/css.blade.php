@@ -5,3 +5,5 @@
 <!-- CSS Files -->
 <link href="{!! asset('assets/css/bootstrap.min.css') !!}" rel="stylesheet" />
 <link href="{!! asset('assets/css/material-kit.css?v=1.2.1') !!}" rel="stylesheet"/>
+<!-- DataTables Responsive CSS -->
+<link href="{!! asset('assets/datatables-responsive/dataTables.responsive.css') !!}"  rel="stylesheet">

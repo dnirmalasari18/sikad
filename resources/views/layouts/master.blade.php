@@ -12,7 +12,9 @@
     </head>
     <body class="section-white" >
         @include('layouts.navbar')
+        <div class="container">
         @yield('body')
+        </div>
         @include('partials.js')
         @yield('unique-js')
     </body>

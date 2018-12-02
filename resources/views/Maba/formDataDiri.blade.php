@@ -1,4 +1,3 @@
-@@ -1,49 +0,0 @@
 @extends('layouts.master')
 
 @section('title')
@@ -6,7 +5,6 @@
 @endsection
 
 @section('body')
-<div class="container">
     <div style="margin-top:90px;display:flex;align-items:stretch">
         <div class="col-md-2">
             @include('layouts.sidebar-datadiri')
@@ -45,6 +43,5 @@
             </div>
         </div>
     </div>
-</div>
 @include('layouts.footer')
 @endsection

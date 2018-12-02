@@ -2438,6 +2438,7 @@ label.control-label {
 .form-group.form-group-sm {
     padding-bottom: 3px;
     margin: 21px 0 0 0;
+    margin-top: 0px;
 }
 
 .form-group.form-group-sm .form-control {
@@ -2675,9 +2676,9 @@ select.form-control[multiple],
 .pagination > .active > span,
 .pagination > .active > span:focus,
 .pagination > .active > span:hover {
-    background-color: #9c27b0;
-    border-color: #9c27b0;
-    color: #FFFFFF;
+    background-color: #d9b310;
+    border-color: #d9b310;
+    color: whitesmoke;
     box-shadow: 0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2);
 }
 
@@ -3077,7 +3078,7 @@ fieldset[disabled] .navbar .btn-link:focus {
 .navbar.navbar-primary {
     background-color: #1d2731;
     color: #ffffff;
-    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(156, 39, 176, 0.46);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px #637376;
 }
 
 .navbar.navbar-primary .navbar-form .form-group input.form-control::-moz-placeholder,
@@ -4039,6 +4040,7 @@ h2.title {
 
 .card .card-content {
     padding: 15px 30px;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .2);
 }
 
 .card .card-body {
@@ -4076,7 +4078,7 @@ h2.title {
 
 .card .header-primary,
 .card .content-primary {
-    background: linear-gradient(60deg, #327cc1,#041622);
+    background: linear-gradient(140deg, #192231,whitesmoke);
 }
 
 .card .header-info,
@@ -4105,7 +4107,7 @@ h2.title {
 }
 
 .card .header-primary {
-    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6);
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px #6e7376;
 }
 
 .card .header-danger {
@@ -9651,7 +9653,7 @@ select.selectpicker {
     }
   }
 
-@media (min-width: 768px) {
+@git (min-width: 768px) {
     .sidebar {
         z-index: 1;
         position: absolute;
@@ -9669,5 +9671,6 @@ select.selectpicker {
     background-size: cover;
     margin: 0;
     padding: 0;
-    border: 0;
+    margin-bottom:10px;
+    border-bottom: 0.5px  solid blue;
 }
