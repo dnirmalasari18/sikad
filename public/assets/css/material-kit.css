@@ -3967,7 +3967,7 @@ h2.title {
     display: inline-block;
     position: relative;
     width: 100%;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     border-radius: 6px;
     color: rgba(0,0,0, 0.87);
     background: #fff;
@@ -4067,7 +4067,7 @@ h2.title {
 .card .header {
     box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     margin: 15px;
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 15px 0;
     background-color: #FFFFFF;
 }
@@ -4303,7 +4303,7 @@ h2.title {
 }
 
 .card-nav-tabs {
-    margin-top: 45px;
+    margin-top: 30px;
 }
 
 .card-nav-tabs .header {
@@ -9674,3 +9674,13 @@ select.selectpicker {
     margin-bottom:10px;
     border-bottom: 0.5px  solid blue;
 }
+.hiho {
+    display: flex; /* equal height of the children */
+  }
+  
+  #hihoho {
+    flex: 1; /* additionally, equal width */
+    
+    padding: 1em;
+    border: solid;
+  }

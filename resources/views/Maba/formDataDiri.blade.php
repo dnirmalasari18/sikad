@@ -5,8 +5,8 @@
 @endsection
 
 @section('body')
-    <div style="margin-top:90px;display:flex;align-items:stretch">
-        <div class="col-md-2">
+    <div class="hiho" style="margin-top:90px;display:flex;align-items:stretch">
+        <div class="col-md-2" id="hihoho"style="padding:0;background-color:#1d2731;">
             @include('layouts.sidebar-datadiri')
         </div>
         <div class="col-md-10">
