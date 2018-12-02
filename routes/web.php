@@ -23,6 +23,14 @@ Route::get('DataDiri', function(){
     return view('Maba.formDataDiri');
 });
 
+Route::get('hasil/persebaran',function(){
+    return view('hasil.persebaran');
+});
+
+Route::get('hasil/perkembangan/{mabaid}',function($mabaid){
+    return view('hasil.perkembangan');
+});
+
 Route::prefix('users')->name('user.')->group(function(){
     Route::get('','UserController@list')->name('list');
     Route::get('tambah','UserController@tambah')->name('tambah');
@@ -33,32 +41,54 @@ Route::prefix('users')->name('user.')->group(function(){
     Route::get('{id}','UserController@lihat')->name('lihat');
 });
 
-Route::prefix('maba')->name('maba.')->group(function(){
-    Route::get('{id}','MabaController@home')->name('home');
+Route::prefix('maba/{id}')->name('maba.')->group(function(){
+    Route::get('','MabaController@home')->name('home');
 
-    Route::get('{id}/biodata','MabaController@biodataLihat')->name('biodata.lihat');
-    Route::get('{id}/biodata/tambah','MabaController@biodataTambah')->name('biodata.tambah');
-    Route::post('{id}/biodata/tambah','MabaController@biodataDoTambah');
+    Route::get('biodata','MabaController@biodataLihat')->name('biodata.lihat');
+    Route::get('biodata/tambah','MabaController@biodataTambah')->name('biodata.tambah');
+    Route::post('biodata/tambah','MabaController@biodataDoTambah');
 
-    Route::get('{id}/pengalaman','MabaController@pengalamanList')->name('pengalaman.list');
-    Route::get('{id}/pengalaman/tambah','MabaController@pengalamanTambah')->name('pengalaman.tambah');
-    Route::post('{id}/pengalaman/tambah','MabaController@pengalamanDoTambah');
-    Route::post('{id}/pengalaman/hapus/{exid}','MabaController@pengalamanDoHapus')->name('pengalaman.hapus');
+    Route::get('pengalaman','MabaController@pengalamanList')->name('pengalaman.list');
+    Route::get('pengalaman/tambah','MabaController@pengalamanTambah')->name('pengalaman.tambah');
+    Route::post('pengalaman/tambah','MabaController@pengalamanDoTambah');
+    Route::post('pengalaman/hapus/{exid}','MabaController@pengalamanDoHapus')->name('pengalaman.hapus');
 
-    Route::get('{id}/harapan','MabaController@harapanList')->name('harapan.list');
-    Route::get('{id}/harapan/tambah','MabaController@harapanTambah')->name('harapan.tambah');
-    Route::post('{id}/harapan/tambah','MabaController@harapanDoTambah');
-    Route::post('{id}/harapan/hapus/{exid}','MabaController@harapanDoHapus')->name('harapan.hapus');
+    Route::get('harapan','MabaController@harapanList')->name('harapan.list');
+    Route::get('harapan/tambah','MabaController@harapanTambah')->name('harapan.tambah');
+    Route::post('harapan/tambah','MabaController@harapanDoTambah');
+    Route::post('harapan/hapus/{exid}','MabaController@harapanDoHapus')->name('harapan.hapus');
 
-    Route::get('{id}/kebutuhan','MabaController@kebutuhanList')->name('kebutuhan.list');
-    Route::get('{id}/kebutuhan/{kebid}','MabaController@kebutuhanLihat')->name('kebutuhan.lihat');
-    Route::get('{id}/kebutuhan/tambah','MabaController@kebutuhanTambah')->name('kebutuhan.tambah');
-    Route::post('{id}/kebutuhan/tambah','MabaController@kebutuhanDoTambah');
-    Route::post('{id}/kebutuhan/hapus/{exid}','MabaController@kebutuhanDoHapus')->name('kebutuhan.hapus');
+    Route::get('kebutuhan','MabaController@kebutuhanList')->name('kebutuhan.list');
+    Route::get('kebutuhan/{kebid}','MabaController@kebutuhanLihat')->name('kebutuhan.lihat');
+    Route::get('kebutuhan/tambah','MabaController@kebutuhanTambah')->name('kebutuhan.tambah');
+    Route::post('kebutuhan/tambah','MabaController@kebutuhanDoTambah');
+    Route::post('kebutuhan/hapus/{exid}','MabaController@kebutuhanDoHapus')->name('kebutuhan.hapus');
 
-    Route::get('{id}/kepribadian','MabaController@kepribadianLihat')->name('kepribadian.lihat');
-    Route::get('{id}/kepribadian/tes','MabaController@kepribadianTes')->name('kepribadian.tes');
-    Route::post('{id}/kepribadian/tes','MabaController@kepribadianDoTes');
+    Route::get('kepribadian','MabaController@kepribadianLihat')->name('kepribadian.lihat');
+    Route::get('kepribadian/tes','MabaController@kepribadianTes')->name('kepribadian.tes');
+    Route::post('kepribadian/tes','MabaController@kepribadianDoTes');
+
+    Route::prefix('nilai')->name('nilai.')->group(function(){
+        Route::prefix('perilaku')->name('perilaku.')->group(function(){
+            Route::get('','HasilController@nilaiPerilakuList')->name('list');
+            Route::get('{perilakuid}','HasilController@nilaiPerilakuTambah')->name('lihat');
+            Route::get('{perilakuid}/tambah','HasilController@nilaiPerilakuTambah')->name('tambah');
+            Route::post('{perilakuid}/tambah','HasilController@nilaiPerilakuDoTambah');
+            Route::get('{perilakuid}/ubah','HasilController@nilaiPerilakuUbah')->name('ubah');
+            Route::post('{perilakuid}/ubah','HasilController@nilaiPerilakuDoUbah');
+            Route::post('{perilakuid}/hapus','HasilController@nilaiPerilakuDoHapus')->name('hapus');
+        });
+
+        Route::prefix('kegiatan')->name('kegiatan.')->group(function(){
+            Route::get('','HasilController@nilaiKegiatanList')->name('list');
+            Route::get('{kegiatanid}','HasilController@nilaiKegiatanTambah')->name('lihat');
+            Route::get('{kegiatanid}/tambah','HasilController@nilaiKegiatanTambah')->name('tambah');
+            Route::post('{kegiatanid}/tambah','HasilController@nilaiKegiatanDoTambah');
+            Route::get('{kegiatanid}/ubah','HasilController@nilaiKegiatanUbah')->name('ubah');
+            Route::post('{kegiatanid}/ubah','HasilController@nilaiKegiatanDoUbah');
+            Route::post('{kegiatanid}/hapus','HasilController@nilaiKegiatanDoHapus')->name('hapus');
+        });
+    });
 });
 
 Route::prefix('wawasan')->name('wawasan.')->group(function(){
