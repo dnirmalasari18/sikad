@@ -12,11 +12,11 @@ class MabaController extends Controller
 
     //
     public function biodataLihat(){
-
+        return view('maba.biodata.lihat');
     }
 
     public function biodataTambah(){
-
+        return view('maba.biodata.tambah');
     }
 
     public function biodataDoTambah(){
@@ -25,11 +25,11 @@ class MabaController extends Controller
 
     // Pengalaman
     public function pengalamanList(){
-
+        return view('maba.pengalaman.list');
     }
 
     public function pengalamanTambah(){
-
+        return view('maba.pengalaman.tambah');
     }
 
     public function pengalamanDoTambah(){
@@ -42,11 +42,11 @@ class MabaController extends Controller
 
     // Harapan
     public function harapanList(){
-
+        return view('maba.harapan.list');
     }
 
     public function harapanTambah(){
-
+        return view('maba.harapan.tambah');
     }
 
     public function harapanDoTambah(){
@@ -59,15 +59,15 @@ class MabaController extends Controller
 
     // Kebutuhan
     public function kebutuhanList(){
-
+        return view('maba.kebutuhan.list');
     }
 
     public function kebutuhanLihat(){
-
+        return view('maba.kebutuhan.lihat');
     }
 
     public function kebutuhanTambah(){
-
+        return view('maba.kebutuhan.tambah');
     }
 
     public function kebutuhanDoTambah(){
@@ -76,5 +76,14 @@ class MabaController extends Controller
 
     public function kebutuhanDoHapus(){
 
+    }
+
+    // Kepribadian
+    public function kepribadianLihat(){
+        return view('maba.kepribadian.lihat');
+    }
+
+    public function kepribadianTes(){
+        return view('maba.kepribadian.tes');
     }
 }
