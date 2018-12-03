@@ -2,12 +2,7 @@
         <a href="{{route('hasil.persebaran')}}">
             <i class="material-icons">bar_chart</i> Persebaran
         </a>
-    </li>
-    <li>
-        <a href="{{route('maba.nilai.kegiatan.list',1)}}">
-                <i class="material-icons">assignment</i>Kelola Nilai Kegiatan
-        </a>
-    </li>
+    </li>    
     <li>
         <a href="{{route('maba.nilai.perilaku.list',1)}}">
                 <i class="material-icons">assignment</i>Kelola Nilai Perilaku

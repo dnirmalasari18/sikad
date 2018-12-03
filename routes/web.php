@@ -82,7 +82,7 @@ Route::group(['middleware'=>'auth'],function(){
 
             Route::prefix('kegiatan')->name('kegiatan.')->group(function(){
                 Route::get('','HasilController@nilaiKegiatanList')->name('list');
-                Route::get('{kegiatanid}','HasilController@nilaiKegiatanTambah')->name('lihat');
+                Route::get('{kegiatanid}','HasilController@nilaiKegiatanLihat')->name('lihat');
                 Route::get('{kegiatanid}/tambah','HasilController@nilaiKegiatanTambah')->name('tambah');
                 Route::post('{kegiatanid}/tambah','HasilController@nilaiKegiatanDoTambah');
                 Route::get('{kegiatanid}/ubah','HasilController@nilaiKegiatanUbah')->name('ubah');
