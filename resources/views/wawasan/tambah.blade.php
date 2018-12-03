@@ -39,11 +39,11 @@
                             </div>
                         </form>
                         <div class="row">
-                                <div class="col-md-10 col-md-offset-2">
-                                    <button class="btn btn-primary btn-round" style="background-color:#CD5C5C; color:black;display:inline-block;float:right;">Batal<i class="fa fa-remove fa-fw"></i></button>
-                                    <button class="btn btn-primary btn-round" style="background-color:black;display:inline-block;float:right; ">Simpan<i class="fa fa-angle-right fa-fw"></i></button>
-                                </div>
+                            <div class="col-md-10 col-md-offset-2">
+                                <button class="btn btn-primary btn-round" style="background-color:#CD5C5C; color:black;display:inline-block;float:right;">Batal<i class="fa fa-remove fa-fw"></i></button>
+                                <button class="btn btn-primary btn-round" style="background-color:black;display:inline-block;float:right; ">Simpan<i class="fa fa-angle-right fa-fw"></i></button>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
