@@ -6455,7 +6455,7 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
 }
 
 .section-white {
-    background: #FFFFFF;
+    background: /*brown pink:#b38481 blue:#8eaebd;*/ #ECC5C0;
 }
 
 .section-white-to-gray {

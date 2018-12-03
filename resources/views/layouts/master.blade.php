@@ -10,7 +10,7 @@
         @include('partials.css')
         @yield('unique-css')
     </head>
-    <body class="section-white" @yield('background-change')>
+    <body class="section-white">
         @include('layouts.navbar')
         <div class="container">
         @yield('body')

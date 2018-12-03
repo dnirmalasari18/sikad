@@ -4,10 +4,6 @@
     Halaman Utama
 @endsection
 
-@section('background-change')
-style="background-color:#8eaebd;"
-@endsection
-
 @section('body')
     <div class="limiter">
 		<div class="container-login100" >
