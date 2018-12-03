@@ -1,16 +1,16 @@
 <li>
     <a href="{{route('hasil.persebaran')}}">
-        <i class="material-icons">apps</i> Persebaran
+        <i class="material-icons">bar_chart</i> Persebaran
     </a>
 </li>
 <li>
     <a href="{{route('maba.nilai.kegiatan.list',1)}}">
-        <i class="material-icons">apps</i>Kelola Nilai Kegiatan
+        <i class="material-icons">assignment</i>Kelola Nilai Kegiatan
     </a>
 </li>
 <li>
     <a href="{{route('maba.nilai.perilaku.list',1)}}">
-        <i class="material-icons">apps</i>Kelola Nilai Perilaku
+        <i class="material-icons">assignment</i>Kelola Nilai Perilaku
     </a>
 </li>
 <li class="dropdown">
@@ -26,27 +26,27 @@
         </li>
         <li>
             <a href="{{route('kegiatan.list')}}">
-                <i class="material-icons">apps</i> Kelola Kegiatan
+                <i class="material-icons">nature_people</i> Kelola Kegiatan
             </a>
         </li>
         <li>
             <a href="{{route('perilaku.list')}}">
-                <i class="material-icons">apps</i> Kelola Perilaku
+                <i class="material-icons">directions_run</i> Kelola Perilaku
             </a>
         </li>
         <li>
             <a href="{{route('wawasan.list')}}">
-                <i class="material-icons">dns</i>Kelola Wawasan
+                <i class="material-icons">star</i>Kelola Wawasan
             </a>
         </li>
         <li>
             <a href="{{route('output.list')}}">
-                <i class="material-icons">build</i>Kelola Output
+                <i class="material-icons">star_border</i>Kelola Output
             </a>
         </li>
         <li>
             <a href="{{route('logout')}}">
-                <i class="material-icons">build</i>Logout
+                    <i class="fa fa-sign-out fa-fw"></i>Logout
             </a>
         </li>
     </ul>

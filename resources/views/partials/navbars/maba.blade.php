@@ -16,7 +16,7 @@
     <ul class="dropdown-menu dropdown-with-icons">
         <li>
             <a href="{{route('logout')}}">
-                <i class="material-icons">account_circle</i> Logout
+                    <i class="fa fa-sign-out fa-fw"></i>Logout
             </a>
         </li>
     </ul>
