@@ -1,11 +1,11 @@
 <li>
-    <a href="{{route('hasil.persebaran')}}">
-        <i class="material-icons">person_outline</i> Data diri
+    <a href="{{route('maba.biodata.lihat',1)}}">
+        <i class="material-icons">apps</i> Data diri
     </a>
 </li>
 <li>
-    <a href="{{route('maba.nilai.kegiatan.list',1)}}">
-        <i class="material-icons">mood</i> Kepribadian
+    <a href="{{route('maba.kepribadian.lihat',1)}}">
+        <i class="material-icons">apps</i> Tes Kepribadian
     </a>
 </li>
 <li class="dropdown">

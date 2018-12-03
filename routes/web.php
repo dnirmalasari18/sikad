@@ -60,10 +60,10 @@ Route::group(['middleware'=>'auth'],function(){
         Route::post('harapan/hapus/{exid}','MabaController@harapanDoHapus')->name('harapan.hapus');
 
         Route::get('kebutuhan','MabaController@kebutuhanList')->name('kebutuhan.list');
-        Route::get('kebutuhan/{kebid}','MabaController@kebutuhanLihat')->name('kebutuhan.lihat');
         Route::get('kebutuhan/tambah','MabaController@kebutuhanTambah')->name('kebutuhan.tambah');
         Route::post('kebutuhan/tambah','MabaController@kebutuhanDoTambah');
         Route::post('kebutuhan/hapus/{exid}','MabaController@kebutuhanDoHapus')->name('kebutuhan.hapus');
+        Route::get('kebutuhan/{kebid}','MabaController@kebutuhanLihat')->name('kebutuhan.lihat');
 
         Route::get('kepribadian','MabaController@kepribadianLihat')->name('kepribadian.lihat');
         Route::get('kepribadian/tes','MabaController@kepribadianTes')->name('kepribadian.tes');
